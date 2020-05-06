@@ -143,5 +143,14 @@ public class CInterpolation {
                 }
             }
         }
+
+        void affiche_points_interpoles(){
+        CPoint Point_Interpoler = new CPoint();
+        System.out.println("- Points interpolés p(z) -\n");
+        for (int i =0 ; i < nbpts_a_interpoler; i++){
+            Point_Interpoler = tabpts_a_interpoler[i];
+            System.out.printf("z=%f p(z)=%f\n", Point_Interpoler.abcisse(), Point_Interpoler.ordonnee());
+        }
     }
+}
 
